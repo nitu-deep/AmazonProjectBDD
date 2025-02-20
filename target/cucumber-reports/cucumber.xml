@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="98.124" tests="13" skipped="0" failures="3" errors="0">
+<testcase classname="Module_Sign in or Create Account-Alerady exising customer" name="Sign in or Create Account_TC18_Correct Password" time="5.065">
+<system-out><![CDATA[
+Given User is on the Amazon sign-in page by clicking on the URL.............passed
+When User enters the valid email............................................passed
+And clicks the continue button..............................................passed
+And enters the valid password...............................................passed
+And clicks the sign-in button...............................................passed
+And enters security question................................................passed
+Then User should be redirected to the Amazon homepage.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Module_Sign in or Create Account-Alerady exising customer" name="Sign in or Create Account_TC15_invalid email-id" time="2.391">
+<system-out><![CDATA[
+Given User is on the Amazon sign-in page by clicking on the URL.............passed
+When User enters an invalid email...........................................passed
+And clicks the invalid email continue button................................passed
+Then The email ID field should display an error message and not accept the invalid value.passed
+]]></system-out>
+</testcase>
+<testcase classname="Module_Sign in or Create Account-Alerady exising customer" name="Sign in or Create Account_TC19_InCorrect Password" time="3.22">
+<system-out><![CDATA[
+Given User is on the Amazon sign-in page by clicking on the URL.............passed
+When User enters the valid email............................................passed
+And clicks the continue button..............................................passed
+And enters the invalid password.............................................passed
+And clicks the sign-in button...............................................passed
+Then User should be presented password error................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Module_Search Facility" name="Search_TC62_Products per page" time="8.437">
+<system-out><![CDATA[
+Given Search_User is on the Amazon sign-in page by clicking on the URL......passed
+When Search_User enters the valid email.....................................passed
+And Search_User clicks the continue button..................................passed
+And Search_User enters the valid password...................................passed
+And Search_User clicks the sign-in button...................................passed
+And Search_User enters security question....................................passed
+And Search_User Enter the data in Search Textbox............................passed
+And Search_User Click search button.........................................passed
+Then Display list of items..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Module_Shopping Cart" name="Shopping Cart_TC40_Item name" time="7.173">
+<system-out><![CDATA[
+Given Shopping_Cart_User is on the Amazon sign-in page by clicking on the URL.passed
+When Shopping_Cart_User enters the valid email..............................passed
+And Shopping_Cart_User click the continue button............................passed
+And Shopping_Cart_User enter the valid password.............................passed
+And Shopping_Cart_User click the sign-in button.............................passed
+And Shopping_Cart_User enter security question..............................passed
+And Shopping_Cart_User click on Cart Icon...................................passed
+Then Lands on Shopping Cart Page............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Module_Your Address" name="Your Address_TC37_Add address button" time="2.533">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at stepdefLogin.StepdifinationyourAddress.your_address_user_enters_the_valid_email(StepdifinationyourAddress.java:40)
+	at ✽.YourAddress_User enters the valid email(file:///E:/Pardeep/Testing/JAVA/workspace/AmazonProjectBDD/src/test/java/feature/YourAddress.feature:26)
+]]>
+</failure>
+<system-out><![CDATA[
+Given YourAddress_User is on the Amazon sign-in page by clicking on the URL.passed
+When YourAddress_User enters the valid email................................failed
+And YourAddress_clicks the continue button..................................skipped
+And YourAddress_enters the valid password...................................skipped
+And YourAddress_clicks the sign-in button...................................skipped
+And YourAddress_enters security question....................................skipped
+And YourAddress_mousehover to Account and list..............................skipped
+And YourAddress_Click on YourAccount........................................skipped
+And YourAddress_Click on YourAdress.........................................skipped
+And YourAddress_Click on AddAddress.........................................skipped
+And YourAddress_Enter FirstandLastName......................................skipped
+And YourAddress_Enter Phonenumber...........................................skipped
+And YourAddress_Enter Address...............................................skipped
+And YourAddress_Enter City..................................................skipped
+And YourAddress_Enter Postal code...........................................skipped
+And YourAddress_Enter Province..............................................skipped
+And YourAddress_Click on Add Address button.................................skipped
+Then Show Address...........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Module_Your Address" name="Your Address_TC28_empty Full name" time="2.495">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at stepdefLogin.StepdifinationyourAddress.your_address_user_enters_the_valid_email(StepdifinationyourAddress.java:40)
+	at ✽.YourAddress_User enters the valid email(file:///E:/Pardeep/Testing/JAVA/workspace/AmazonProjectBDD/src/test/java/feature/YourAddress.feature:48)
+]]>
+</failure>
+<system-out><![CDATA[
+Given YourAddress_User is on the Amazon sign-in page by clicking on the URL.passed
+When YourAddress_User enters the valid email................................failed
+And YourAddress_clicks the continue button..................................skipped
+And YourAddress_enters the valid password...................................skipped
+And YourAddress_clicks the sign-in button...................................skipped
+And YourAddress_enters security question....................................skipped
+And YourAddress_mousehover to Account and list..............................skipped
+And YourAddress_Click on YourAccount........................................skipped
+And YourAddress_Click on YourAdress.........................................skipped
+And YourAddress_Click on AddAddress.........................................skipped
+And YourAddress_Enter Phonenumber...........................................skipped
+And YourAddress_Enter Address...............................................skipped
+And YourAddress_Enter City..................................................skipped
+And YourAddress_Enter Postal code...........................................skipped
+And YourAddress_Enter Province..............................................skipped
+And YourAddress_Click on Add Address button.................................skipped
+Then Show FullName_Error....................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Module_Your order" name="Your order_TC_24_Different options" time="11.173">
+<system-out><![CDATA[
+Given Yourorder_User is on the Amazon sign-in page by clicking on the URL...passed
+When Yourorder_User enters the valid email..................................passed
+And Yourorder_clicks the continue button....................................passed
+And Yourorder_enters the valid password.....................................passed
+And Yourorder_clicks the sign-in button.....................................passed
+And Yourorder_enters security question......................................passed
+And Yourorder_mousehover to Account and list................................passed
+And Yourorder_Click on Your Account.........................................passed
+And Yourorder_Clck on Your order............................................passed
+Then Shows different options................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Module_Your order" name="Your order_TC55_Options" time="13.357">
+<system-out><![CDATA[
+Given Yourorder_User is on the Amazon sign-in page by clicking on the URL...passed
+When Yourorder_User enters the valid email..................................passed
+And Yourorder_clicks the continue button....................................passed
+And Yourorder_enters the valid password.....................................passed
+And Yourorder_clicks the sign-in button.....................................passed
+And Yourorder_enters security question......................................passed
+And Yourorder_mousehover to Account and list................................passed
+And Yourorder_Click on Your Account.........................................passed
+And Yourorder_Clck on Your order............................................passed
+And Yourorder_Cllick on Buyagain............................................passed
+Then Shows Buy again options................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Module_Your order" name="Your order_TC57_Not yet shipped" time="10.556">
+<system-out><![CDATA[
+Given Yourorder_User is on the Amazon sign-in page by clicking on the URL...passed
+When Yourorder_User enters the valid email..................................passed
+And Yourorder_clicks the continue button....................................passed
+And Yourorder_enters the valid password.....................................passed
+And Yourorder_clicks the sign-in button.....................................passed
+And Yourorder_enters security question......................................passed
+And Yourorder_mousehover to Account and list................................passed
+And Yourorder_Click on Your Account.........................................passed
+And Yourorder_Clck on Your order............................................passed
+And Yourorder_Cllick on NotyetShipped.......................................passed
+Then Shows different options................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Module_Your order" name="Your order_TC58_Cancelled Order" time="11.524">
+<system-out><![CDATA[
+Given Yourorder_User is on the Amazon sign-in page by clicking on the URL...passed
+When Yourorder_User enters the valid email..................................passed
+And Yourorder_clicks the continue button....................................passed
+And Yourorder_enters the valid password.....................................passed
+And Yourorder_clicks the sign-in button.....................................passed
+And Yourorder_enters security question......................................passed
+And Yourorder_mousehover to Account and list................................passed
+And Yourorder_Click on Your Account.........................................passed
+And Yourorder_Clck on Your order............................................passed
+And Yourorder_Cancelled orders..............................................passed
+Then Shows different options................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Module_Payment" name="Payment_TC39_Default method" time="11.63">
+<failure type="java.lang.IndexOutOfBoundsException" message="Index 0 out of bounds for length 0">
+<![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at stepdefLogin.StepdefinationYourPayment.your_payment_enter_credit_card_number(StepdefinationYourPayment.java:117)
+	at ✽.YourPayment_Enter Credit Card number(file:///E:/Pardeep/Testing/JAVA/workspace/AmazonProjectBDD/src/test/java/feature/YourPayment.feature:36)
+]]>
+</failure>
+<system-out><![CDATA[
+Given YourPayment_User is on the Amazon sign-in page by clicking on the URL.passed
+When YourPayment_User enters the valid email................................passed
+And YourPayment_clicks the continue button..................................passed
+And YourPayment_enters the valid password...................................passed
+And YourPayment_clicks the sign-in button...................................passed
+And YourPayment_enters security question....................................passed
+And YourPayment_mousehover to Account and list..............................passed
+And YourPayment_Clcik on YourAccount........................................passed
+And YourPayment_Click on YourPayments.......................................passed
+And YourPayment_Click on Add the payment method.............................passed
+And YourPayment_Click on Add debit or credit card...........................passed
+And YourPayment_Enter Credit Card number....................................failed
+And YourPayment_Enter expiry date...........................................skipped
+And YourPayment_Enter security Code.........................................skipped
+And YourPayment_Name on the Card............................................skipped
+And YourPayment_Click on Add and Continue...................................skipped
+Then Select Card............................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Module_Your Account" name="Your Account_TC_23_Sub list Options" time="8.327">
+<system-out><![CDATA[
+Given MyAccount_User is on the Amazon sign-in page by clicking on the URL...passed
+When MyAccount_User enters the valid email..................................passed
+And MyAccount_clicks the continue button....................................passed
+And MyAccount_enters the valid password.....................................passed
+And MyAccount_clicks the sign-in button.....................................passed
+And MyAccount_enters security question......................................passed
+And MyAccount_mousehover to Account and list................................passed
+Then Click on YourAccount...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
